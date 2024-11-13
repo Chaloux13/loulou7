@@ -1,27 +1,64 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  
-  <!-- Lien vers le favicon -->
-  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
-
-  <!-- Polices Google -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-
-</head>
-<body>
-
-  <header>
-    <!-- Votre contenu de header -->
-    <h1>Bienvenue sur mathieu</h1>
-  </header>
-
-  {{ content }}
-
-</body>
+<html lang="{{ site.lang | default: "fr" }}">
+  <head>
+    <meta charset="UTF-8">
+    
+    <!-- SEO automatique -->
+    {% seo %}
+    
+    <!-- Préchargement des polices Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    
+    <!-- Meta tags pour responsive et couleur du thème -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    
+    <!-- Personnalisation du header -->
+    {% include head-custom.html %}
+  </head>
+  <body>
+    
+    <!-- Lien pour sauter directement au contenu -->
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    
+    <!-- En-tête avec le logo et titre -->
+    <header class="page-header" role="banner">
+      
+      <!-- Logo du site -->
+      <div class="header-logo">
+        <img src="{{ '/assets/images/logo-loux.png' | relative_url }}" alt="Logo">
+      </div>
+      
+      <!-- Titre du site -->
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      
+      <!-- Description du site -->
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    </header>
+    
+    <!-- Contenu principal de la page -->
+    <main id="content" class="main-content" role="main">
+      
+      <h3>Bienvenue les Loulous !</h3>
+      <p>Découvrez les meilleures opportunités sponsorisées.</p>
+      
+      <!-- Conteneur pour les boutons sponsorisés -->
+      <div class="button-container">
+        <a href="/page1" class="ad-button">Travail aux États-Unis</a>
+        <a href="/page2" class="ad-button">Travail au Canada</a>
+        <a href="/page3" class="ad-button">Travail en Europe</a>
+      </div>
+      
+      <!-- Pied de page -->
+      <footer class="site-footer">
+        <span class="site-footer-credits">Ce site a été généré par <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+    
+  </body>
 </html>
