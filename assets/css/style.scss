@@ -1,0 +1,46 @@
+/* Style pour les conteneurs de publicité */
+.ad-container {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8; /* Fond clair */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  transition: all 0.3s ease;
+}
+
+/* Style pour l'image */
+.ad-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Ajouter un effet au survol (hover) */
+.ad-container:hover {
+  background-color: #ffdddd; /* Fond plus clair au survol */
+  transform: scale(1.05); /* Légère animation d'agrandissement */
+}
+
+/* Style pour les liens */
+.ad-container a {
+  display: block;
+  text-decoration: none; /* Supprimer le soulignement */
+  color: inherit; /* Hériter de la couleur du texte */
+}
+
+/* Style pour les titres (h2) */
+.ad-container h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: red; /* Fond rouge pour le texte du bouton */
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet au survol des titres */
+.ad-container:hover h2 {
+  background-color: darkred; /* Changer la couleur du fond au survol */
+}
