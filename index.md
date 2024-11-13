@@ -9,7 +9,7 @@ Découvrez les meilleures bonheure sponsorisées.
 
 <div class="ad-container">
   <a href="https://lien-publicitaire-1.com" target="_blank">
-    <img src="(https://pixabay.com/fr/photos/femme-la-mari%C3%A9e-mariage-beaut%C3%A9-8628792/)" alt="Publicité 1">
+    <img src="https://cdn.pixabay.com/photo/2024/03/12/13/13/woman-8628792_1280.jpg" alt="Publicité 1">
     <h2>Publicité 1</h2>
   </a>
 </div>
