@@ -9,7 +9,9 @@ Découvrez les meilleures opportunités sponsorisées.
 
 <!-- Logo en haut de la page -->
 <div class="header-logo">
-  <img src="https://via.assets/images/.png/150x50?text=Votre+Logo" alt="Logo">
+
+  <img src="{{ '/assets/images/logo-loux.png' | relative_url }}" alt="Logo">
+
 </div>
 
 <!-- Conteneur pour les boutons -->
