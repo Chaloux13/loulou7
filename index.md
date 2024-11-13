@@ -13,7 +13,7 @@ Découvrez les meilleures bonheure sponsorisées.
   <a>
 <div class="ad-container">
   <a href="https://lien-publicitaire-1.com" target="_blank">
-    <img src="https://cdn.pixabay.com/photo/2024/03/12/13/13/woman-828792_1280.jpg" alt="Publicité 1">
+    <img src= https://jekyllthemes.io/freealt="Publicité 1">
     <h2>Travail au etats unies</h2>
   </a>
 </div>
