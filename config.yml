@@ -4,3 +4,7 @@ plugins:
 title: [loulou bonheur]
 description: [la bonheur sur web]
 theme: jekyll-theme-cayman
+# Dans le fichier _config.yml
+sass:
+  style: compressed
+
