@@ -6,4 +6,6 @@ description: [la bonheur sur web]
 # Dans le fichier _config.yml
 sass:
   style: compressed
+head:
+  - "<link rel='stylesheet' href='/assets/css/style.css'>"
 
