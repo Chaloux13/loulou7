@@ -1,38 +1,20 @@
 ---
 layout: default
-title: "loulou bonheur du web"
+title: "Loulou Bonheur du Web"
 ---
 
-# Bienvenue les loulou
+# Bienvenue les loulous
 
-Découvrez les meilleures bonheure sponsorisées.
+Découvrez les meilleures opportunités sponsorisées.
 
-
-
-<div> 
-  <a>
-<div class="ad-container">
-  <a href="https://lien-publicitaire-1.com" target="_blank">
-    <img src= "https://jekyllthemes.io/free" alt="Publicité 1">
-    <h2>Travail au etats unies</h2>
-  </a>
+<!-- Logo en haut de la page -->
+<div class="header-logo">
+  <img src="https://via.assets/images/.png/150x50?text=Votre+Logo" alt="Logo">
 </div>
 
-<div class="ad-container">
-  <a href="https://lien-publicitaire-2.com" target="_blank">
-    <img src="https://cdn.pixabay.com/photo/2020/04/25/21/18/architecture-8593014_960_720.jpg" alt="Publicité 2">
-    <h2>tTravail au Cannada</h2>
-  </a>
-</div>
-
-<div class="ad-container">
-  <a href="https://lien-publicitaire-3.com" target="_blank">
-    <img src="https://cdn.pixabay.com/photo/2021/07/14/07/15/femme-8640045_960_720.jpg" alt="Publicité 3">
-    <h2>Travail Europe</h2>
-  </a>
-</div>
-
-
-
-  </a>
+<!-- Conteneur pour les boutons -->
+<div class="button-container">
+  <a href="/page1" class="ad-button">Travail aux États-Unis</a>
+  <a href="/page2" class="ad-button">Travail au Canada</a>
+  <a href="/page3" class="ad-button">Travail en Europe</a>
 </div>
