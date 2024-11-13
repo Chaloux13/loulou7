@@ -1,22 +1,15 @@
 ---
 layout: default
-title: "Loulou Bonheur du Web"
+title: "Bienvenue sur Loulou Bonheur"
+description: "Votre source de meilleures opportunités sur le web"
 ---
 
-# Bienvenue les loulous
+# Bienvenue sur le site Loulou Bonheur
 
 Découvrez les meilleures opportunités sponsorisées.
 
-<!-- Logo en haut de la page -->
-<div class="header-logo">
+- [Travail aux États-Unis](/page1)
+- [Travail au Canada](/page2)
+- [Travail en Europe](/page3)
 
-  <img src="{{ '/assets/images/logo-loux.png' | relative_url }}" alt="Logo">
-
-</div>
-
-<!-- Conteneur pour les boutons -->
-<div class="button-container">
-  <a href="/page1" class="ad-button">Travail aux États-Unis</a>
-  <a href="/page2" class="ad-button">Travail au Canada</a>
-  <a href="/page3" class="ad-button">Travail en Europe</a>
-</div>
+N'hésitez pas à cliquer sur ces liens pour découvrir plus de détails sur chaque opportunité.
