@@ -3,7 +3,6 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: [loulou bonheur]
 description: [la bonheur sur web]
-theme: jekyll-theme-cayman
 # Dans le fichier _config.yml
 sass:
   style: compressed
