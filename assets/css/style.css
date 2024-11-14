@@ -1,81 +1,75 @@
 /* Corps de la page */
 body {
-  background-color: #0001A8; /* couleur claire comme sur l'image */
+  background-color: #0001A8; /* couleur de fond */
   font-family: Arial, sans-serif;
-  color: #E6E6E6; /* blanc cassée */
+  color: #E6E6E6; /* couleur du texte */
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-/* Style du logo en haut de la page */
-.header-logo  {
+/* Style du logo */
+.header-logo {
   text-align: center;
   padding: 20px;
 }
 
 /* Taille du logo par défaut pour desktop */
 .header-logo img {
-  width: 100px;  /* Taille légèrement réduite */
+  width: 100px; /* Taille du logo */
   height: auto;
 }
 
 /* Taille du logo pour les petits écrans (mobile) */
 @media (max-width: 768px) {
   .header-logo img {
-    width: 90px; /* Augmente légèrement la taille pour mobile */
+    width: 90px; /* Taille du logo sur mobile */
   }
 }
 
 /* Centrage du titre */
 .project-name {
-  
-  font-size: 24px; /* Ajustez selon vos préférences */
+  font-size: 24px; /* Taille du titre */
   margin: 10px 0 5px;
 }
 
-/* Style du sous-titre avec une taille de police réduite */
+/* Style du sous-titre avec taille réduite */
 .project-tagline {
-
-  font-size: 12px; /* Taille très petite pour style page parkée */
+  font-size: 12px; /* Taille très petite pour page parkée */
   color: #E6E6E6;
-  
 }
 
-
+/* Masquer le titre sur mobile */
+@media (max-width: 768px) {
+  .project-name {
+    display: none; /* Masquer sur mobile */
+  }
+}
 
 /* Conteneur pour les boutons */
 .button-container {
   display: flex;
-  flex-direction: column;  /* Aligne les éléments verticalement */
-  gap: 15px;  /* Espace entre les boutons */
-  align-items: center;  /* Centre les boutons horizontalement */
-  padding: 20px;  /* Un peu de marge autour */
-}
-
-
-
-/* Masquer le titre pour les écrans de largeur maximale de 768px */
-@media (max-width: 768px) {
-  .project-name {
-    display: none;
-  }
+  flex-direction: column; /* Alignement vertical */
+  gap: 15px; /* Espace entre les boutons */
+  align-items: center; /* Centrer les boutons */
+  padding: 20px;
 }
 
 /* Style du footer */
-/* Style pour le conteneur de bas de page */
+.footer-menu {
+  padding-top: 20px;
+}
+
 .footer-bottom {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 15px;
-  margin-top: 20px;
+  font-size: 14px;
+  color: #E6E6E6;
 }
 
 .footer-bottom a,
 .footer-bottom p {
-  font-size: 14px; /* même taille de police */
-  color: #E6E6E6;
   margin: 5px 0;
   text-decoration: none;
 }
@@ -84,12 +78,11 @@ body {
   color: #fcfcfc; /* couleur de survol */
 }
 
-
 /* Style des boutons */
 .ad-button {
   background-color: #3782FC;
   color: white;
-  font-size: 18px; /* Taille par défaut pour desktop */
+  font-size: 18px; /* Taille pour desktop */
   padding: 15px 30px;
   border-radius: 8px; /* Bord arrondi */
   border: 2px solid #3CF1FC; /* Bordure rouge */
@@ -106,7 +99,6 @@ body {
   transform: translateX(5px);
 }
 
-
 /* Styles pour mobile */
 @media (max-width: 768px) {
   .ad-button {
@@ -116,12 +108,11 @@ body {
   }
 }
 
-/*javascript*/
+/* Ajout d'un effet clic pour les boutons */
 .clicked {
   transform: scale(0.95);
   transition: transform 0.1s;
 }
-
 
 /* Style pour les liens */
 a {
