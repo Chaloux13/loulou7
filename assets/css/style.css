@@ -38,8 +38,9 @@ body {
 /* Style pour le conteneur de bas de page */
 .footer-bottom {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 15px;
   margin-top: 20px;
 }
 
