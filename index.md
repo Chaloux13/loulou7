@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Bienvenue sur Loulou msg .md "
-description: "Votre source de meilleures opportunités sur le web"
+/*title: "Bienvenue sur Loulou msg .md "
+description: "Votre source de meilleures opportunités sur le web"*/
 ---
 
 # Bienvenue sur le site Loulou Bonheur
