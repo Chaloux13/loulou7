@@ -2,65 +2,50 @@
 <html lang="{{ site.lang | default: "fr" }}">
   <head>
     <meta charset="UTF-8">
-    
-    <!-- SEO automatique -->
-    {% seo %}
-    
-    <!-- Préchargement des polices Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    
-    <!-- Meta tags pour responsive et couleur du thème -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
+
+    <!-- Préchargement des polices Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+
     <!-- Lien vers le CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    
+
     <!-- Personnalisation du header -->
     {% include head-custom.html %}
   </head>
   <body>
-    <!-- Lien pour sauter directement au contenu -->
     <a id="skip-to-content" href="#content">Skip to the content.</a>
-    
-   <!-- En-tête centré avec le logo, le titre, et le sous-titre -->
-  <header class="header-center">
-    <div class="header-logo">
-      <img src="{{ '/assets/images/logo-loux.png' | relative_url }}" alt="Logo">
-    </div>
-    <h1 class="project-name">{{ site.title }}</h1>
-    <h2 class="project-tagline">{{ site.description }}</h2>
-  </header>
-    
+
+    <!-- En-tête centré avec le logo, le titre, et le sous-titre -->
+    <header class="header-center">
+      <div class="header-logo">
+        <img src="{{ '/assets/images/logo-loux.png' | relative_url }}" alt="Logo">
+      </div>
+      <h1 class="project-name">{{ site.title }}</h1>
+      <h2 class="project-tagline">{{ site.description }}</h2>
+    </header>
+
     <!-- Contenu principal de la page -->
-    <main id="content" class="main-content" role="main">
-
-
-
-      
+    <main id="content" class="main-content">
       <!-- Conteneur des boutons de navigation -->
-  <main class="button-container">
-    <a href="/page1" class="ad-button">Travail aux États-Unis</a>
-    <a href="/page2" class="ad-button">Travail au Canada</a>
-    <a href="/page3" class="ad-button">Travail en Europe</a>
-  </main>
+      <div class="button-container">
+        <a href="/page1" class="ad-button">Travail aux États-Unis →</a>
+        <a href="/page2" class="ad-button">Travail au Canada →</a>
+        <a href="/page3" class="ad-button">Travail en Europe →</a>
+      </div>
 
-
-
-
-
+      <!-- Footer -->
       <footer class="footer-menu">
-  <div class="footer-bottom">
-    <a href="/privacy">Politique de confidentialité</a>
-    <p>© 2024 Loulou Bonheur. Tous droits réservés.</p>
-  </div>
-</footer>
-
-
-<script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+        <div class="footer-bottom">
+          <a href="/privacy">Politique de confidentialité</a>
+          <p>© 2024 Loulou Bonheur. Tous droits réservés.</p>
+        </div>
+      </footer>
     </main>
-    
+
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>
