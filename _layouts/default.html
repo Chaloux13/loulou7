@@ -22,39 +22,30 @@
     {% include head-custom.html %}
   </head>
   <body>
-    
     <!-- Lien pour sauter directement au contenu -->
     <a id="skip-to-content" href="#content">Skip to the content.</a>
     
-    <!-- En-tête avec le logo et titre -->
-    <header class="page-header" role="banner">
-      
-      <!-- Logo du site -->
-      <div class="header-logo">
-        <img src="{{ '/assets/images/logo-loux.png' | relative_url }}" alt="Logo">
-      </div>
-      
-      <!-- Titre du site -->
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      
-      <!-- Description du site -->
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-    </header>
+   <!-- En-tête centré avec le logo, le titre, et le sous-titre -->
+  <header class="header-center">
+    <div class="header-logo">
+      <img src="{{ '/assets/images/logo-loux.png' | relative_url }}" alt="Logo">
+    </div>
+    <h1 class="project-name">{{ site.title }}</h1>
+    <h2 class="project-tagline">{{ site.description }}</h2>
+  </header>
     
     <!-- Contenu principal de la page -->
     <main id="content" class="main-content" role="main">
 
-       <!--
-      <h3>Bienvenue les Loulous !</h3>
-      <p>Découvrez les meilleures opportunités sponsorisées.</p>
-      -->
+
+
       
-      <!-- Conteneur pour les boutons sponsorisés -->
-      <div class="button-container">
-        <a href="/page1" class="ad-button">Travail aux États-Unis</a>
-        <a href="/page2" class="ad-button">Travail au Canada</a>
-        <a href="/page3" class="ad-button">Travail en Europe</a>
-      </div>
+      <!-- Conteneur des boutons de navigation -->
+  <main class="button-container">
+    <a href="/page1" class="ad-button">Travail aux États-Unis</a>
+    <a href="/page2" class="ad-button">Travail au Canada</a>
+    <a href="/page3" class="ad-button">Travail en Europe</a>
+  </main>
 
 
 
