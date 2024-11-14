@@ -1,8 +1,8 @@
 /* Corps de la page */
 body {
-  background-color: #f7f7f7; /* couleur claire comme sur l'image */
+  background-color: #0001A8; /* couleur claire comme sur l'image */
   font-family: Arial, sans-serif;
-  color: #333; /* couleur du texte sombre */
+  color: #E6E6E6; /* blanc cassée */
   text-align: center;
   margin: 0;
   padding: 0;
@@ -38,7 +38,7 @@ body {
 .project-tagline {
 
   font-size: 12px; /* Taille très petite pour style page parkée */
-  color: #666;
+  color: #E6E6E6;
   
 }
 
@@ -75,34 +75,37 @@ body {
 .footer-bottom a,
 .footer-bottom p {
   font-size: 14px; /* même taille de police */
-  color: #888888;
+  color: #E6E6E6;
   margin: 5px 0;
   text-decoration: none;
 }
 
 .footer-bottom a:hover {
-  color: #ff4c4c; /* couleur de survol */
+  color: #fcfcfc; /* couleur de survol */
 }
 
 
 /* Style des boutons */
 .ad-button {
-  background-color: #0056b3;  /* Couleur de fond rouge */
-  color: white;  /* Texte en blanc */
-  font-size: 18px;  /* Taille du texte */
-  padding: 15px 30px;  /* Espacement interne des boutons */
-  border-radius: 8px;  /* Coins arrondis */
-  text-decoration: none;  /* Supprime le soulignement */
-  text-align: center;  /* Centrer le texte dans le bouton */
-  width: 250px;  /* Largeur fixe des boutons */
-  transition: background-color 0.3s ease, transform 0.2s;  /* Animation de couleur au survol */
+  background-color: #3782FC;
+  color: white;
+  font-size: 18px; /* Taille par défaut pour desktop */
+  padding: 15px 30px;
+  border-radius: 8px; /* Bord arrondi */
+  border: 2px solid #3CF1FC; /* Bordure rouge */
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 250px; /* Largeur pour desktop */
+  transition: background-color 0.3s ease, transform 0.2s;
 }
 
 /* Effet au survol */
 .ad-button:hover {
-  background-color: #004494;  /* Changer la couleur au survol */
-  transform: transtateX(5px);
+  background-color: #E6E6E6;
+  transform: translateX(5px);
 }
+
 
 /* Styles pour mobile */
 @media (max-width: 768px) {
