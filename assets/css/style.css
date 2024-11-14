@@ -27,6 +27,43 @@ body {
   padding: 20px;  /* Un peu de marge autour */
 }
 
+/* Masquer le titre pour les écrans de largeur maximale de 768px */
+@media (max-width: 768px) {
+  .project-name {
+    display: none;
+  }
+}
+
+/* Style du footer */
+.footer-menu {
+  background-color: #09121d; /* même couleur que le fond du site */
+  color: #cfcfcf;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-nav a {
+  color: #cfcfcf; /* même couleur que le texte principal */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ff4c4c; /* effet de survol rouge pour cohérence */
+}
+
+/* Adaptation pour mobile */
+@media (max-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
 /* Style des boutons */
 .ad-button {
   background-color: #ff4c4c;  /* Couleur de fond rouge */
