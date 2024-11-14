@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+/*alerte*/
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(() => {
     alert("Bienvenue sur Loulou Bonheur ! Découvrez nos opportunités !");
