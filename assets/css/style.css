@@ -11,7 +11,7 @@ body {
 /* Style du logo */
 .header-logo {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
 }
 
 /* Taille du logo par défaut pour desktop */
@@ -23,7 +23,7 @@ body {
 /* Taille du logo pour les petits écrans (mobile) */
 @media (max-width: 768px) {
   .header-logo img {
-    width: 90px; /* Taille du logo sur mobile */
+    width: 50px; /* Taille du logo sur mobile */
   }
 }
 
@@ -37,6 +37,9 @@ body {
 .project-tagline {
   font-size: 12px; /* Taille très petite pour page parkée */
   color: #E6E6E6;
+   text-align: left;
+  margin-left: 20px; /* Pour l'aligner à gauche */
+  margin-top: 20px; /* Espacement par rapport au titre */
 }
 
 /* Masquer le titre sur mobile */
@@ -53,6 +56,50 @@ body {
   gap: 15px; /* Espace entre les boutons */
   align-items: center; /* Centrer les boutons */
   padding: 20px;
+}
+
+
+
+/* Style des boutons */
+.ad-button {
+  background-color: #3782FC;
+  color: white;
+  font-size: 20px; /* Taille pour desktop */
+  padding: 20px 35px;
+  border-radius: 8px; /* Bord arrondi */
+  border: 2px solid #3CF1FC; /* Bordure rouge */
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 500px; /* Largeur pour desktop */
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+/* Effet au survol */
+.ad-button:hover {
+  background-color: #E6E6E6;
+  transform: translateX(5px);
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+  .ad-button {
+    font-size: 18px; /* Taille de police réduite pour mobile */
+    padding: 15px 30px;
+    width: 80%; /* Largeur réduite pour mobile */
+  }
+}
+
+/* Ajout d'un effet clic pour les boutons */
+.clicked {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
+/* Style pour les liens */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Style du footer */
@@ -76,46 +123,4 @@ body {
 
 .footer-bottom a:hover {
   color: #fcfcfc; /* couleur de survol */
-}
-
-/* Style des boutons */
-.ad-button {
-  background-color: #3782FC;
-  color: white;
-  font-size: 20px; /* Taille pour desktop */
-  padding: 20px 35px;
-  border-radius: 8px; /* Bord arrondi */
-  border: 2px solid #3CF1FC; /* Bordure rouge */
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  width: 300px; /* Largeur pour desktop */
-  transition: background-color 0.3s ease, transform 0.2s;
-}
-
-/* Effet au survol */
-.ad-button:hover {
-  background-color: #E6E6E6;
-  transform: translateX(5px);
-}
-
-/* Styles pour mobile */
-@media (max-width: 768px) {
-  .ad-button {
-    font-size: 16px; /* Taille de police réduite pour mobile */
-    padding: 10px 20px;
-    width: 200px; /* Largeur réduite pour mobile */
-  }
-}
-
-/* Ajout d'un effet clic pour les boutons */
-.clicked {
-  transform: scale(0.95);
-  transition: transform 0.1s;
-}
-
-/* Style pour les liens */
-a {
-  text-decoration: none;
-  color: inherit;
 }
