@@ -1,52 +1,48 @@
 /* Corps de la page */
 body {
-  background-color: #09121d;  /* Couleur de fond très claire */
-  font-family: Arial, sans-serif; /* Police lisible */
-  color: #cfcfcf;  /* Couleur du texte par défaut */
+  background-color: #f7f7f7; /* couleur claire comme sur l'image */
+  font-family: Arial, sans-serif;
+  color: #333; /* couleur du texte sombre */
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 
 /* Style du logo en haut de la page */
-.header-logo {
+.header-logo  {
   text-align: center;
   padding: 20px;
 }
 
 /* Taille du logo par défaut pour desktop */
 .header-logo img {
-  width: 150px;  /* Taille légèrement réduite */
+  width: 100px;  /* Taille légèrement réduite */
   height: auto;
 }
 
 /* Taille du logo pour les petits écrans (mobile) */
 @media (max-width: 768px) {
   .header-logo img {
-    width: 120px; /* Augmente légèrement la taille pour mobile */
+    width: 90px; /* Augmente légèrement la taille pour mobile */
   }
 }
 
 /* Centrage du titre */
 .project-name {
-  text-align: center;
+  
   font-size: 24px; /* Ajustez selon vos préférences */
-  margin: 0;
+  margin: 10px 0 5px;
 }
 
 /* Style du sous-titre avec une taille de police réduite */
 .project-tagline {
-  text-align: center;
+
   font-size: 12px; /* Taille très petite pour style page parkée */
-  color: #888888;
-  margin-top: 5px;
+  color: #666;
+  
 }
 
 
-
-.header-logo img {
-  width: 150px;  /* Taille du logo */
-  height: auto;
-}
 
 /* Conteneur pour les boutons */
 .button-container {
@@ -56,6 +52,8 @@ body {
   align-items: center;  /* Centre les boutons horizontalement */
   padding: 20px;  /* Un peu de marge autour */
 }
+
+
 
 /* Masquer le titre pour les écrans de largeur maximale de 768px */
 @media (max-width: 768px) {
@@ -89,20 +87,30 @@ body {
 
 /* Style des boutons */
 .ad-button {
-  background-color: #ff4c4c;  /* Couleur de fond rouge */
+  background-color: #0056b3;  /* Couleur de fond rouge */
   color: white;  /* Texte en blanc */
-  font-size: 16px;  /* Taille du texte */
-  padding: 10px 20px;  /* Espacement interne des boutons */
-  border-radius: 5px;  /* Coins arrondis */
+  font-size: 18px;  /* Taille du texte */
+  padding: 15px 30px;  /* Espacement interne des boutons */
+  border-radius: 8px;  /* Coins arrondis */
   text-decoration: none;  /* Supprime le soulignement */
   text-align: center;  /* Centrer le texte dans le bouton */
-  width: 200px;  /* Largeur fixe des boutons */
-  transition: background-color 0.3s ease;  /* Animation de couleur au survol */
+  width: 250px;  /* Largeur fixe des boutons */
+  transition: background-color 0.3s ease, transform 0.2s;  /* Animation de couleur au survol */
 }
 
 /* Effet au survol */
 .ad-button:hover {
-  background-color: #ff1a1a;  /* Changer la couleur au survol */
+  background-color: #004494;  /* Changer la couleur au survol */
+  transform: transtateX(5px);
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+  .ad-button {
+    font-size: 16px; /* Taille de police réduite pour mobile */
+    padding: 10px 20px;
+    width: 200px; /* Largeur réduite pour mobile */
+  }
 }
 
 /*javascript*/
