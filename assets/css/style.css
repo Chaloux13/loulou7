@@ -45,6 +45,12 @@ body {
   background-color: #ff1a1a;  /* Changer la couleur au survol */
 }
 
+/*javascript*/
+.clicked {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
 
 /* Style pour les liens */
 a {
