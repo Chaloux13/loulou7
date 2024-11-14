@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Bienvenue sur Loulou msg FRANCE "
-description: "Votre source de meilleures opportunités sur le web msg FRANCE"
+title: "Bienvenue sur Loulou msg "
+description: "Votre source de meilleures opportunités sur le web msg"
 ---
 
 
