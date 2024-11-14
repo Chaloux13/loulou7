@@ -35,32 +35,24 @@ body {
 }
 
 /* Style du footer */
-.footer-menu {
-  background-color: #09121d; /* même couleur que le fond du site */
-  color: #cfcfcf;
-  padding: 20px 0;
-  text-align: center;
+/* Style pour le conteneur de bas de page */
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.footer-nav a {
-  color: #cfcfcf; /* même couleur que le texte principal */
-  margin: 0 10px;
+.footer-bottom a,
+.footer-bottom p {
+  font-size: 14px; /* même taille de police */
+  color: #888888;
+  margin: 5px 0;
   text-decoration: none;
-  font-size: 14px;
-  transition: color 0.3s ease;
 }
 
-.footer-nav a:hover {
-  color: #ff4c4c; /* effet de survol rouge pour cohérence */
-}
-
-/* Adaptation pour mobile */
-@media (max-width: 768px) {
-  .footer-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+.footer-bottom a:hover {
+  color: #ff4c4c; /* couleur de survol */
 }
 
 
