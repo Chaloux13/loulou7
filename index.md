@@ -1,11 +1,10 @@
 ---
 layout: default
-title: "Bienvenue sur Loulou msg "
+title: "Bienvenue sur Loulou msg"
 description: "Votre source de meilleures opportunités sur le web msg"
 ---
 
-
-#Découvrez les meilleures opportunités sponsorisées.
+# Découvrez les meilleures opportunités sponsorisées.
 
 - [Travail aux États-Unis](/page1)
 - [Travail au Canada](/page2)
