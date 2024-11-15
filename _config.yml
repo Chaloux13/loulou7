@@ -1,3 +1,6 @@
+title: [loulou bonheur]
+description: [la bonheur sur web]
+
 markdown: kramdown
 permalink: pretty
 
@@ -5,8 +8,7 @@ remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme 
 # add this line to the plugins list if you already have one
-title: [loulou bonheur]
-description: [la bonheur sur web]
+
 # Dans le fichier _config.yml
 sass:
   style: compressed
