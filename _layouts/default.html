@@ -1,56 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "fr" }}">
+<html lang="{{ site.lang | default: 'fr' }}">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <!-- Titre dynamique -->
-  <title>{{ page.title | default: site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
-
-
-    <!-- Préchargement des polices Google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-
-    <!-- Lien vers le CSS -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-
-    <!-- Personnalisation du header -->
-    {% include head-custom.html %}
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
-    <!-- En-tête centré avec le logo, le titre, et le sous-titre -->
-    <header class="header-center">
-      <div class="header-logo">
-        <img src="{{ '/assets/images/logo-loux.png' | relative_url }}" alt="Logo">
-      </div>
-      <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">{{ site.description }}</h2>
+    <header>
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.description }}</p>
     </header>
-
-    <!-- Contenu principal de la page -->
-    <main id="content" class="main-content">
-      <!-- Conteneur des boutons de navigation -->
-      <div class="button-container">
-        <a href="/page1" class="ad-button">Travail aux États-Unis →</a>
-        <a href="/page2" class="ad-button">Travail au Canada →</a>
-        <a href="/page3" class="ad-button">Travail en Europe →</a>
-      </div>
-
-      <!-- Footer -->
-      <footer class="footer-menu">
-        <div class="footer-bottom">
-          <a href="/privacy">Politique de confidentialité</a>
-          <p>© 2024 Loulou Bonheur. Tous droits réservés.</p>
-        </div>
-      </footer>
+    <main>
+      {{ content }}
     </main>
-
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>
