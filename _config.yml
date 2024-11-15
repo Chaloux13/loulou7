@@ -9,5 +9,4 @@ sass:
   style: compressed
 head:
   - "<link rel='stylesheet' href='/assets/css/style.css'>"
-theme: jekyll-theme-cayman 
-# Assurez-vous de définir un thème local si vous n'utilisez pas un thème distant
+
