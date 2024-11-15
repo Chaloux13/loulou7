@@ -1,104 +1,29 @@
-/* Corps de la page */
+/* Exemple de styles pour ton site */
+
 body {
-  background-color: #212F70; /* couleur de fond */
   font-family: Arial, sans-serif;
-  color: #E6E6E6; /* couleur du texte */
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  background-color: #f0f0f0;
 }
 
-/* Style du logo */
-.header-logo {
-  text-align: center;
-  padding: 30px;
-}
-
-/* Taille du logo par défaut pour desktop */
-.header-logo img {
-  width: 100px; /* Taille du logo */
-  height: auto;
-}
-
-/* Taille du logo pour les petits écrans (mobile) */
-@media (max-width: 768px) {
-  .header-logo img {
-    width: 50px; /* Taille du logo sur mobile */
-  }
-}
-
-/* Centrage du titre */
-.project-name {
-  font-size: 24px; /* Taille du titre */
-  margin: 10px 0 5px;
-}
-
-/* Style du sous-titre avec taille réduite */
-.project-tagline {
-  font-size: 12px; /* Taille très petite pour page parkée */
-  color: #E6E6E6;
-   text-align: left;
-  margin-left: 20px; /* Pour l'aligner à gauche */
-  margin-top: 20px; /* Espacement par rapport au titre */
-}
-
-/* Masquer le titre sur mobile */
-@media (max-width: 768px) {
-  .project-name {
-    display: none; /* Masquer sur mobile */
-  }
-}
-
-/* Conteneur pour les boutons */
-.button-container {
-  display: flex;
-  flex-direction: column; /* Alignement vertical */
-  gap: 15px; /* Espace entre les boutons */
-  align-items: center; /* Centrer les boutons */
-  padding: 20px;
-}
-
-
-
-/* Style des boutons */
-.ad-button {
-  background-color: #3782FC;
+header {
+  background-color: #333;
   color: white;
-  font-size: 20px; /* Taille pour desktop */
-  padding: 20px 35px;
-  border-radius: 8px; /* Bord arrondi */
-  border: 2px solid #3CF1FC; /* Bordure rouge */
-  text-decoration: none;
+  padding: 10px 0;
   text-align: center;
-  display: inline-block;
-  width: 500px; /* Largeur pour desktop */
-  transition: background-color 0.3s ease, transform 0.2s;
 }
 
-/* Effet au survol */
-.ad-button:hover {
-  background-color: #E6E6E6;
-  transform: translateX(5px);
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
 }
 
-/* Styles pour mobile */
-@media (max-width: 768px) {
-  .ad-button {
-    font-size: 18px; /* Taille de police réduite pour mobile */
-    padding: 15px 30px;
-    width: 80%; /* Largeur réduite pour mobile */
-  }
-}
-
-/* Ajout d'un effet clic pour les boutons */
-.clicked {
-  transform: scale(0.95);
-  transition: transform 0.1s;
-}
-
-/* Style pour les liens */
-a {
+footer a {
+  color: #fff;
   text-decoration: none;
-  color: inherit;
 }
 
+footer a:hover {
+  text-decoration: underline;
+}
