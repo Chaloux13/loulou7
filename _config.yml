@@ -9,4 +9,11 @@ sass:
   style: compressed
 head:
   - "<link rel='stylesheet' href='/assets/css/style.css'>"
+  defaults: 
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
 
