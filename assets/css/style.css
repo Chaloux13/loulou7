@@ -65,11 +65,11 @@ footer {
   text-align: center;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
+h1, h2 {
+  color: #333;
 }
 
-footer a:hover {
-  text-decoration: underline;
+a {
+  color: #007bff;
 }
+
