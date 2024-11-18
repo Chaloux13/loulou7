@@ -1,4 +1,10 @@
 /* Exemple de styles pour ton site */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
 
 body {
   background-color: #212F70; /* couleur de fond */
@@ -17,14 +23,45 @@ body {
   align-items: center; /* Centrer les boutons */
   padding: 20px;
 }
-
-
-header {
-  background-color: #333;
+/* Style des boutons */
+.ad-button {
+  background-color: #3782FC;
   color: white;
-  padding: 10px 0;
+  font-size: 20px; /* Taille pour desktop */
+  padding: 20px 35px;
+  border-radius: 8px; /* Bord arrondi */
+  border: 2px solid #3CF1FC; /* Bordure rouge */
+  text-decoration: none;
   text-align: center;
+  display: inline-block;
+  width: 500px; /* Largeur pour desktop */
+  transition: background-color 0.3s ease, transform 0.2s;
 }
+
+/* Effet au survol */
+.ad-button:hover {
+  background-color: #E6E6E6;
+  transform: translateX(5px);
+}
+
+/* Styles pour mobile */
+@media (max-width: 768px) {
+  .ad-button {
+    font-size: 18px; /* Taille de police réduite pour mobile */
+    padding: 15px 30px;
+    width: 80%; /* Largeur réduite pour mobile */
+  }
+}
+
+/* Ajout d'un effet clic pour les boutons */
+.clicked {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
+
+
+
 
 footer {
   background-color: #333;
