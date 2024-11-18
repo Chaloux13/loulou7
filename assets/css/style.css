@@ -13,6 +13,9 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  min-height: 100vh;  /* Assure que le body occupe toute la hauteur de l'écran */
+  display: flex;
+  flex-direction: column;
 }
 
 /* --- Header et Footer --- */
@@ -27,6 +30,7 @@ footer {
   text-align: center;
   margin: 0;
   width: 100%;
+  margin-top: auto;
 }
 
 /* --- Lien "Politique de confidentialité" --- */
@@ -40,7 +44,7 @@ footer a {
 
 footer a:hover {
   color: #fefae0; /* Changer la couleur au survol */
-  text-decoration: none; /* Souligner au survol */
+  text-decoration: underline; /* Souligner au survol */
 }
 
 /* --- Titres --- */
@@ -67,13 +71,13 @@ a.bouton-acceuil, a.bouton-page {
   font-size: 25px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }  
-}
 
+/*survol*/
 a.bouton-acceuil:hover, a.bouton-page:hover {
  background-color: #1d2d44;  /* Bleu pétrole */
-  color: white;
-  border-color: #0d1321;  /* Bleu nuit */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  
+ color: white;
+ border-color: #0d1321;  /* Bleu nuit */
+ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  
 }  
 
 a.bouton-acceuil:after, a.bouton-page:after {
@@ -95,12 +99,12 @@ a.bouton-acceuil:after, a.bouton-page:after {
 @media (max-width: 768px) {
   .container-acceuil {
     flex-direction: column;  /* Sur mobile, les boutons restent verticaux */
-    gap: 10px;  /* Moins d'espace entre les boutons */
+    gap: 20px;  /* Moins d'espace entre les boutons */
   }
 
   .container-acceuil a.bouton-acceuil,
   .container-acceuil a.bouton-page {
-    width: 90%;  /* Les boutons prennent 90% de la largeur sur mobile */
+    width: 80%;  /* Les boutons prennent 90% de la largeur sur mobile */
     max-width: none;  /* Enlever la limite de largeur maximale */
   }
 }
@@ -108,14 +112,14 @@ a.bouton-acceuil:after, a.bouton-page:after {
 @media (min-width: 769px) {
   .container-acceuil {
     flex-direction: column;  /* Sur desktop, les boutons sont alignés horizontalement */
-    justify-content: space-around; /* Espacement entre les boutons */
+    /*justify-content: space-around; Espacement entre les boutons */
     gap: 30px;  /* Plus d'espace entre les boutons */
   }
 
   .container-acceuil a.bouton-acceuil,
   .container-acceuil a.bouton-page {
-    width: 30%;  /* Les boutons prennent 30% de la largeur sur grand écran */
-    max-width: 300px;
+    width: 50%;  /* Les boutons prennent 30% de la largeur sur grand écran */
+    max-width: 500px;
   }
 }
 
