@@ -9,6 +9,14 @@ body {
   padding: 0;
 }
 
+/* Conteneur pour les boutons */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Alignement vertical */
+  gap: 15px; /* Espace entre les boutons */
+  align-items: center; /* Centrer les boutons */
+  padding: 20px;
+}
 
 
 header {
