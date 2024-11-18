@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Travail aux États-Unis"
+title: "Travail aux jirama"
 ---
 
 <h2>Canvas</h2>
