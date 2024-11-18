@@ -22,7 +22,11 @@ header, footer {
 
 /* Boutons d'accueil avec box-shadow stylisé */
 a.bouton-acceuil {
-  display: inline-block;
+  display: flex; /*verticale*/
+  flex-direction: column;
+  align-items: center; /* Centrer horizontalement */
+  gap: 20px; /* Espacement entre les conteneurs */
+  margin-top: 50px; /* Un peu d'espace au-dessus des conteneurs */
   background-color: #f0ebd8;
   color: #333;
   border: 2px solid #748cab;
@@ -79,10 +83,29 @@ a.bouton-page:after {
 
 footer {
   background-color: transparent;
-  color: #E6E6E6;
+  color: white;
   padding: 10px 0;
   text-align: center;
+  margin: 0;
+  width: 100%;
+  border-top: 1px solid #ddd; /* Ajouter une petite bordure pour mieux séparer le footer */
 }
+
+/* Style pour le lien de la politique de confidentialité */
+footer a {
+  color: #E6E6E6; /* Même couleur que le texte copyright */
+  text-decoration: none; /* Supprimer la sous-ligne */
+  font-weight: normal; /* Pas de gras */
+  padding: 5px 10px; /* Espacement léger autour du lien */
+  transition: all 0.3s ease; /* Transition fluide */
+}
+
+footer a:hover {
+  color: #007bff; /* Changer la couleur au survol */
+  text-decoration: underline; /* Souligner au survol */
+}
+
+
 
 h1, h2 {
   color: #333;
