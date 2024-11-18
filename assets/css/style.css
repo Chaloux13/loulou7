@@ -39,7 +39,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #007bff; /* Changer la couleur au survol */
+  color: #fefae0; /* Changer la couleur au survol */
   text-decoration: none; /* Souligner au survol */
 }
 
@@ -57,7 +57,7 @@ a.bouton-acceuil, a.bouton-page {
   color: #333;
   border: 2px solid #748cab; /* Bordure couleur bleu ciel bas */
   padding: 12px 25px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-top: 15px;
   text-align: center;
   border-radius: 8px;
@@ -65,15 +65,15 @@ a.bouton-acceuil, a.bouton-page {
   transition: background 0.3s, box-shadow 0.3s;  
   font-weight: bold; 
   font-size: 25px; 
-  box-shadow: 5px 5px 15px rgba(180, 180, 180, 0.5),   
-              -5px -5px 10px rgba(255, 255, 255, 0.7);  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
 }  
 }
 
 a.bouton-acceuil:hover, a.bouton-page:hover {
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);  
-  box-shadow: 2px 2px 10px rgba(180, 180, 180, 0.5),   
-              -2px -2px 5px rgba(255, 255, 255, 0.7);  
+ background-color: #1d2d44;  /* Bleu pétrole */
+  color: white;
+  border-color: #0d1321;  /* Bleu nuit */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  
 }  
 
 a.bouton-acceuil:after, a.bouton-page:after {
@@ -107,7 +107,7 @@ a.bouton-acceuil:after, a.bouton-page:after {
 
 @media (min-width: 769px) {
   .container-acceuil {
-    flex-direction: row;  /* Sur desktop, les boutons sont alignés horizontalement */
+    flex-direction: column;  /* Sur desktop, les boutons sont alignés horizontalement */
     justify-content: space-around; /* Espacement entre les boutons */
     gap: 30px;  /* Plus d'espace entre les boutons */
   }
