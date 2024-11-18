@@ -8,7 +8,7 @@ description: "Votre source de meilleures opportunités sur le web msg"
 #   Découvrez les meilleures opportunités sponsorisées 
 
 
-- [Travail à Madagascar](page1/)
+- [Travail à Tamatave](page1/)
 - [Travail à Maurice](page2/)
 - [Travail en Europe](page3/)
 
