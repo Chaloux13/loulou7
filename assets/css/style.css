@@ -1,9 +1,15 @@
 /* Exemple de styles pour ton site */
 
 body {
+  background-color: #212F70; /* couleur de fond */
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  color: #E6E6E6; /* couleur du texte */
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
+
+
 
 header {
   background-color: #333;
