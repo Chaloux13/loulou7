@@ -6,80 +6,20 @@
 /*color: f0ebd8 blanc cassée*/
 
 
-/* Fond et couleurs principales */
+/* --- Fond et couleurs principales --- */
 body {
-  background-color: #0d1321;
+  background-color: #0d1321;  /* Bleu nuit */
   font-family: 'Roboto', sans-serif;
-  color: #f0ebd8;
+  color: #f0ebd8;  /* Blanc cassé */
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
+/* --- Header et Footer --- */
 header, footer {
   background-color: transparent; /* Fond transparent pour header et footer */
 }
-
-/* Boutons d'accueil avec box-shadow stylisé */
-a.bouton-acceuil {
-  display: flex; /*verticale*/
-  flex-direction: column;
-  align-items: center; /* Centrer horizontalement */
-  gap: 20px; /* Espacement entre les conteneurs */
-  margin-top: 50px; /* Un peu d'espace au-dessus des conteneurs */
-  background-color: #f0ebd8;
-  color: #333;
-  border: 2px solid #748cab;
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  margin-top: 15px;
-  text-align: center;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-a.bouton-acceuil:hover {
-  background-color: #1d2d44;
-  color: white;
-  border-color: #0d1321;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-a.bouton-acceuil:after {
-  content: " →";
-  font-size: 1.4rem;
-  margin-left: 10px;
-}
-
-/* Boutons de la page 1, 2 et 3 (ajout de flèches et autres styles) */
-a.bouton-page {
-  display: inline-block;
-  background-color: #748cab;
-  color: #f0ebd8;
-  border: 2px solid #3e5c76;
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  margin-top: 15px;
-  text-align: center;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-a.bouton-page:hover {
-  background-color: #1d2d44;
-  color: white;
-  border-color: #0d1321;
-}
-
-a.bouton-page:after {
-  content: " →";
-  font-size: 1.4rem;
-  margin-left: 10px;
-}
-
 
 footer {
   background-color: transparent;
@@ -91,7 +31,7 @@ footer {
   border-top: 1px solid #ddd; /* Ajouter une petite bordure pour mieux séparer le footer */
 }
 
-/* Style pour le lien de la politique de confidentialité */
+/* --- Lien "Politique de confidentialité" --- */
 footer a {
   color: #E6E6E6; /* Même couleur que le texte copyright */
   text-decoration: none; /* Supprimer la sous-ligne */
@@ -105,20 +45,17 @@ footer a:hover {
   text-decoration: underline; /* Souligner au survol */
 }
 
-
-
+/* --- Titres --- */
 h1, h2 {
   color: #333;
 }
 
 /* --- Boutons (Accueil & Pages) --- */
-
-/* Boutons d'accueil avec box-shadow stylisé */
-a.bouton-acceuil {
+a.bouton-acceuil, a.bouton-page {
   display: inline-block;
-  background-color: #f0ebd8;
+  background-color: #f0ebd8; /* Fond des boutons */
   color: #333;
-  border: 2px solid #748cab;
+  border: 2px solid #748cab; /* Bordure couleur bleu ciel bas */
   padding: 12px 25px;
   font-size: 1.2rem;
   margin-top: 15px;
@@ -129,43 +66,54 @@ a.bouton-acceuil {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-a.bouton-acceuil:hover {
-  background-color: #1d2d44;
+a.bouton-acceuil:hover, a.bouton-page:hover {
+  background-color: #1d2d44;  /* Bleu pétrole */
   color: white;
-  border-color: #0d1321;
+  border-color: #0d1321;  /* Bleu nuit */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-a.bouton-acceuil:after {
+a.bouton-acceuil:after, a.bouton-page:after {
   content: " →";
   font-size: 1.4rem;
   margin-left: 10px;
 }
 
-/* Boutons de la page 1, 2 et 3 */
-a.bouton-page {
-  display: inline-block;
-  background-color: #748cab;
-  color: #f0ebd8;
-  border: 2px solid #3e5c76;
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  margin-top: 15px;
-  text-align: center;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.3s ease;
+/* --- Conteneurs de la page d'accueil --- */
+.container-acceuil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px; /* Un peu d'espace au-dessus des conteneurs */
 }
 
-a.bouton-page:hover {
-  background-color: #1d2d44;
-  color: white;
-  border-color: #0d1321;
+/* --- Flexbox et Responsivité --- */
+@media (max-width: 768px) {
+  .container-acceuil {
+    flex-direction: column;  /* Sur mobile, les boutons restent verticaux */
+    gap: 10px;  /* Moins d'espace entre les boutons */
+  }
+
+  .container-acceuil a.bouton-acceuil,
+  .container-acceuil a.bouton-page {
+    width: 90%;  /* Les boutons prennent 90% de la largeur sur mobile */
+    max-width: none;  /* Enlever la limite de largeur maximale */
+  }
 }
 
-a.bouton-page:after {
-  content: " →";
-  font-size: 1.4rem;
-  margin-left: 10px;
+@media (min-width: 769px) {
+  .container-acceuil {
+    flex-direction: row;  /* Sur desktop, les boutons sont alignés horizontalement */
+    justify-content: space-around; /* Espacement entre les boutons */
+    gap: 30px;  /* Plus d'espace entre les boutons */
+  }
+
+  .container-acceuil a.bouton-acceuil,
+  .container-acceuil a.bouton-page {
+    width: 30%;  /* Les boutons prennent 30% de la largeur sur grand écran */
+    max-width: 300px;
+  }
 }
+
 
