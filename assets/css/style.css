@@ -20,22 +20,62 @@ header, footer {
   background-color: transparent; /* Fond transparent pour header et footer */
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: all 0.3s ease;
+/* Boutons d'accueil avec box-shadow stylisé */
+a.bouton-acceuil {
   display: inline-block;
+  background-color: #f0ebd8;
+  color: #333;
+  border: 2px solid #748cab;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-a:hover {
-  background-color: #007bff;
+a.bouton-acceuil:hover {
+  background-color: #1d2d44;
   color: white;
-  text-decoration: none;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-color: #0d1321;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+a.bouton-acceuil:after {
+  content: " →";
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
+/* Boutons de la page 1, 2 et 3 (ajout de flèches et autres styles) */
+a.bouton-page {
+  display: inline-block;
+  background-color: #748cab;
+  color: #f0ebd8;
+  border: 2px solid #3e5c76;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a.bouton-page:hover {
+  background-color: #1d2d44;
+  color: white;
+  border-color: #0d1321;
+}
+
+a.bouton-page:after {
+  content: " →";
+  font-size: 1.4rem;
+  margin-left: 10px;
+}
+
 
 footer {
   background-color: transparent;
