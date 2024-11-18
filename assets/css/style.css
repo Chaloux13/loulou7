@@ -26,7 +26,7 @@ header, footer {
 footer {
   background-color: transparent;
   color: white;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
   margin: 0;
   width: 100%;
@@ -98,28 +98,25 @@ a.bouton-acceuil:after, a.bouton-page:after {
 /* --- Flexbox et Responsivité --- */
 @media (max-width: 768px) {
   .container-acceuil {
-    flex-direction: column;  /* Sur mobile, les boutons restent verticaux */
-    gap: 20px;  /* Moins d'espace entre les boutons */
+    gap: 10px;  /* Moins d'espace entre les boutons */
   }
 
   .container-acceuil a.bouton-acceuil,
   .container-acceuil a.bouton-page {
     width: 80%;  /* Les boutons prennent 90% de la largeur sur mobile */
-    max-width: none;  /* Enlever la limite de largeur maximale */
+    max-width: 400px;  /* Enlever la limite de largeur maximale */
   }
 }
 
 @media (min-width: 769px) {
   .container-acceuil {
-    flex-direction: column;  /* Sur desktop, les boutons sont alignés horizontalement */
-    /*justify-content: space-around; Espacement entre les boutons */
     gap: 30px;  /* Plus d'espace entre les boutons */
   }
 
   .container-acceuil a.bouton-acceuil,
   .container-acceuil a.bouton-page {
     width: 50%;  /* Les boutons prennent 30% de la largeur sur grand écran */
-    max-width: 500px;
+    max-width: 400px;
   }
 }
 
