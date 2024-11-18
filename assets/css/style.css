@@ -1,17 +1,16 @@
 /* Exemple de styles pour ton site */
-/*color: 0d1321*/
-/*color: 1d2d44*/
-/*color: 3e5c76*/
-/*color: 748cab*/
-/*color: f0ebd8*/
+/*color: 0d1321 bleu nuit*/
+/*color: 1d2d44 bleu petrole*/
+/*color: 3e5c76 bleu ciel haute*/
+/*color: 748cab bleu ciel bas*/
+/*color: f0ebd8 blanc cassée*/
 
-/* --- Style Global --- */
 
 /* Fond et couleurs principales */
 body {
-  background-color: #f8f9fa;
+  background-color: #0d1321;
   font-family: 'Roboto', sans-serif;
-  color: #E6E6E6;
+  color: #f0ebd8;
   text-align: center;
   margin: 0;
   padding: 0;
