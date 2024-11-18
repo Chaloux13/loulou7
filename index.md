@@ -4,10 +4,11 @@ title: "Bienvenue sur Loulou msg"
 description: "Votre source de meilleures opportunités sur le web msg"
 ---
 
-# Découvrez les meilleures opportunités sponsorisées
 
-<div class="button-container">
-    <a href="{{ '/page1.html' | relative_url }}" class="btn btn-madagascar">Travail à Madagascar</a>
-    <a href="page2.html" class="btn btn-france">travail aux EDF</a>
-    <a href="page3.md" class="btn btn-canada">travail aux Aeropor</a>
-</div>
+#   Découvrez les meilleures opportunités sponsorisées 
+
+
+- [Travail à Madagascar](page1/)
+- [Travail à Maurice](page2/)
+- [Travail en Europe](page3/)
+
