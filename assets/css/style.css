@@ -16,7 +16,7 @@ body {
 }
 
 /* Conteneur pour les boutons */
-.button-container {
+button-container {
   display: flex;
   flex-direction: column; /* Alignement vertical */
   gap: 15px; /* Espace entre les boutons */
