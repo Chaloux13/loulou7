@@ -56,7 +56,9 @@ h1, h2 {
 
 /* --- Boutons (Accueil & Pages) --- */
 a.bouton-acceuil, a.bouton-page {
-  display: inline-block;
+  display: flex;  
+  flex-direction: column;  
+  align-items: center; 
   background-color: #f0ebd8; /* Fond des boutons */
   color: #333;
   border: 2px solid #748cab; /* Bordure couleur bleu ciel bas */
