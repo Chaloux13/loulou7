@@ -8,6 +8,6 @@ description: "Votre source de meilleures opportunités sur le web msg"
 
 <div class="button-container">
     <a href="page1.md" class="btn btn-madagascar">travail aux jirama</a>
-    <a href="page1.html" class="btn btn-france">travail aux EDF</a>
-    <a href="page1.html" class="btn btn-canada">travail aux Aeropor</a>
+    <a href="page1.md" class="btn btn-france">travail aux EDF</a>
+    <a href="page1.md" class="btn btn-canada">travail aux Aeropor</a>
 </div>
