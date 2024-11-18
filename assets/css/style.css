@@ -16,25 +16,46 @@ body {
 }
 
 
-footer {
-  background-color: #343a40;
-  color: white;
-  padding: 10px 0;
+/* Style global pour les liens */
+a {
+  color: #007bff;  /* Couleur du texte */
+  text-decoration: none;  /* Supprime la sous-ligne par défaut */
+  font-weight: bold;  /* Texte en gras */
+  padding: 10px 20px;  /* Espacement autour du texte */
+  border-radius: 5px;  /* Coins arrondis */
+  transition: all 0.3s ease;  /* Transition fluide pour l'effet au survol */
+  display: inline-block;  /* Pour que le padding s'applique correctement */
 }
 
-h1, h2 {
-  color: #333;
+/* Effet de survol (hover) : changement de couleur de fond et texte */
+a:hover {
+  background-color: #007bff;  /* Couleur de fond au survol */
+  color: white;  /* Texte en blanc au survol */
+  text-decoration: none;  /* Pas de sous-ligne au survol */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Ombre portée pour l'effet visuel */
+}
+
+/* Style spécifique pour les liens dans les sections (par exemple, Facebook, Instagram, WhatsApp) */
+h3 {
+  font-size: 1.5rem;  /* Taille de la police pour le titre de la section */
+  color: #333;  /* Couleur sombre pour les titres */
+  margin-bottom: 15px;  /* Espacement sous le titre */
 }
 
 a {
-  color: #007bff;
+  background-color: #f8f9fa;  /* Couleur de fond claire pour les liens */
+  border: 2px solid #007bff;  /* Bordure bleue autour du lien */
+  padding: 12px 25px;  /* Espacement généreux autour du texte */
+  font-size: 1.2rem;  /* Taille de texte légèrement plus grande */
+  margin-top: 10px;  /* Espacement au-dessus des liens */
+  text-align: center;  /* Centre le texte du lien */
 }
 
 a:hover {
-  color: #0056b3;
+  background-color: #007bff;  /* Couleur de fond bleue au survol */
+  border-color: #0056b3;  /* Bordure plus foncée au survol */
+  color: white;  /* Texte blanc au survol */
 }
-
-
 
 
 footer {
