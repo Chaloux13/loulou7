@@ -7,7 +7,7 @@
 
 /* --- Fond et couleurs principales --- */
 body {
-  background-color: #0d1321;  /* Bleu nuit */
+  background-color: #231942;  /* Bleu nuit */
   font-family: 'Roboto', sans-serif;
   color: #f0ebd8;  /* Blanc cassé */
   text-align: center;
@@ -54,27 +54,25 @@ h1, h2 {
 
 /* --- Boutons (Accueil & Pages) --- */
 a.bouton-acceuil, a.bouton-page {
-  display: inline-flex;  
-  flex-direction: column;  
-  align-items: center;  
-  background-color: #f0ebd8; /* Fond des boutons */
-  color: #333;
-  border: 2px solid #748cab; /* Bordure couleur bleu ciel bas */
-  padding: 12px 25px;
-  font-size: 1.5rem;
-  margin-top: 15px;
-  text-align: center;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background 0.3s, box-shadow 0.3s;  
-  font-weight: bold; 
-  font-size: 25px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-  width: auto;  /* Ne pas forcer les boutons à occuper toute la largeur */
-  max-width: 400px; /* Limiter la largeur maximale des boutons */
-  margin-left: auto;
-  margin-right: auto;
-}  
+ display: block;  /* Utiliser block pour chaque bouton afin de les empiler verticalement */
+ width: auto;  /* Ne pas forcer la largeur */
+ max-width: 400px; /* Limiter la largeur maximale des boutons */
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 15px; /* Espacement au-dessus des boutons */
+ background-color: #f0ebd8; /* Fond des boutons */
+ color: #333;
+ border: 2px solid #748cab; /* Bordure couleur bleu ciel bas */
+ padding: 12px 25px;
+ font-size: 1.5rem;
+ text-align: center;
+ border-radius: 8px;
+ text-decoration: none;
+ transition: background 0.3s, box-shadow 0.3s;  
+ font-weight: bold; 
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+  
 
 /*survol*/
 a.bouton-acceuil:hover, a.bouton-page:hover {
